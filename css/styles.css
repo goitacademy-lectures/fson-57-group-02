@@ -286,7 +286,7 @@ ul {
   color: var(--hero-text-color);
   margin: 0 auto 30px;
 
-  animation: text-slide 800ms ease-out 100ms;
+  animation: text-bounce 800ms ease-out 200ms;
 }
 
 /* Features */
@@ -507,7 +507,7 @@ ul {
   opacity: 1;
   transition: opacity 300ms ease-in-out;
 
-  animation: rotate linear 4s infinite both;
+  animation: rotate linear 6s infinite both;
 }
 .button.primary:hover::before {
   opacity: 0;
@@ -696,7 +696,7 @@ ul {
 
 /* Animations */
 
-@keyframes text-slide {
+@keyframes text-bounce {
   0% {
     letter-spacing: -0.6em;
     opacity: 0;
