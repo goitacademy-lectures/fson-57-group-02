@@ -4,275 +4,361 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bose NC 700</title>
+    <title>WebStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Header section -->
-    <header>
-      <a href="./"
-        ><img src="./images/header/logo.png" alt="лого" width="128" height="15"
-      /></a>
-      <nav>
-        <ul>
-          <li><a href="">Характеристики</a></li>
-          <li><a href="">История</a></li>
-          <li><a href="">Отзывы</a></li>
-          <li><a href="">Оплата и доставка</a></li>
+    <!--Шапка-->
+    <header class="header">
+      <div class="container main-info">
+        <a href="./index.html" class="logo">Web<span class="studio-header">Studio</span></a>
+        <nav>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="" class="link current"> Студия </a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link header-contacts">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="link header-contacts">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
+      </div>
     </header>
-
+    <!--Основа-->
     <main>
-      <!-- Hero section -->
-      <section>
-        <p>Наушники с шумоподавлением, которые способны на многое</p>
-        <p>До 20 часов воспроизведения</p>
-        <h1>Наушники <span lang="en">Bose NC 700</span></h1>
-        <button type="button">Заказать</button>
-        <img
-          src="./images/hero/img.png"
-          alt="Наушники"
-          width="700"
-          height="598"
-        />
+      <!--Основная часть-->
+      <section class="hero">
+        <h1 class="hero-title">
+          ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
+          ДЛЯ ВАШЕГО БИЗНЕСА
+        </h1>
+        <button class="button primary" type="button" data-modal-open>
+          <span class="button-txt">Заказать услугу</span>
+        </button>
       </section>
-      <!-- Features-Section -->
-      <section>
-        <img
-          src="./images/feature/feature1.jpg"
-          alt="навушники"
-          width="590"
-          height="616"
-        />
-        <h2>Премиальныйдизайн и комфорт</h2>
-        <ul>
-          <li>
-            <h3>11 уровней шумоподавления</h3>
-            <p>
-              С новыми наушниками Bose Noise Cancelling Headphone 700 можно
-              плавно увеличить или уменьшить уровень шумоподавления. Вас слышно
-              отлично и вы слышите собеседника четко, даже в шумной обстановке!
-            </p>
-          </li>
-          <li>
-            <h3>Комфорт на максимум</h3>
-            <p>
-              Стильная, легкая дужка из нержавеющей стали с мягкими,
-              расположенными под углом чашками наушников для комфортной посадки.
-              Внутренняя сторона выполнена из мягкой гелевой подкладки, которая
-              хорошо прилегает к голове.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- benefits section -->
-      <section>
-        <h2>способны на многое</h2>
-        <ul>
-          <li>Возможность принимать звонки</li>
-          <li>Насыщенное и мощное звучание</li>
-          <li>Опция активного шумоподавления</li>
-          <li>Непревзойденная система микрофонов</li>
-          <li>Поддержка голосовых помощников</li>
-          <li>Аудиоплатформа дополненной реальности Bose AR</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Роскошь тишины</h2>
-        <img
-          src="./images/promo/promo.jpg"
-          alt="Роскошь тишины"
-          width="1441"
-          height="524"
-        />
-        <ul>
-          <li>
-            <h3>Максимальное наслаждение</h3>
-            <p>
-              Для того чтобы создать комфортную атмосферу — поднимайте уровень
-              за уровнем от "прозрачного" режима до максимального блокирования
-              звуков. Режим разговора можно активировать в один клик с помощью
-              специальной кнопки.
-            </p>
-          </li>
-          <li>
-            <h3>Хрустальный звук</h3>
-            <p>
-              Система динамиков и фирменный активный эквалайзер способны
-              обеспечить качественный и мощный звук на любом уровне громкости.
-              Вы можете быть уверены в отсутствии искажений и кристальной
-              чистоте высоких и низких частот.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- Technology section  -->
-      <section>
-        <h2 lang="en">Bose AR</h2>
-        <h3>Фирменная технология</h3>
-        <p>
-          Bose AR — это уникальная аудиоплатформа дополненной реальности, что
-          открывает перед вами новые грани звучания. Она позволяет вам
-          оставаться на связи с реальным миром и одновременно погружаться в
-          виртуальную вселенную.
-        </p>
-        <img
-          src="./images/technology/technology.jpg"
-          alt="Фирменная технология"
-          width="700"
-          height="586"
-        />
-      </section>
-      <section>
-        <img
-          src="./images/garanties/garanties.jpg"
-          alt="Наушники"
-          width="590"
-          height="565"
-        />
-        <h2>Гарантии</h2>
-        <ul>
-          <li>
-            <h3>Гарантия возврата денег в течение 90 дней</h3>
-            <p>
-              Если вы не удовлетворены продуктом на 100% вы можете вернуть его
-              обратно и получить полный возврат денег
-            </p>
-          </li>
-          <li>
-            <h3>1 год гарантии</h3>
-            <p>
-              Вне зависимости от страны вашего проживания, если ваши наушники
-              сломались, мы вышлем вам новые
-            </p>
-          </li>
-        </ul>
-      </section>
-      <!-- History brand -->
-      <section>
-        <div>
-          <h2>история создания бренда</h2>
-          <p>
-            История Bose Corporation началась с разочарования. В 1956 году
-            аспирант Массачусетского технологического института Амар Боуз (Amar
-            Bose) приобрёл одну из лучших по тем временам стереосистем для
-            своего дома. После нескольких минут прослушивания аудиозаписи его
-            недоумение сменилось разочарованием.
-          </p>
-          <p>
-            С точки зрения Амара звук был настолько плоским и неестественным,
-            что лучше не слушать музыку вовсе, чем слушать её в столь искажённом
-            виде.
-          </p>
-          <img
-            src="./images/history/history-1.jpg"
-            alt="Основатель компании Амар Боуз"
-            width="290"
-            height="355"
-          />
-        </div>
-        <div>
-          <img
-            src="./images/history/history-2.jpg"
-            alt="история создания бренда"
-            width="700"
-            height="628"
-          />
-          <p>
-            Разочарование Боуза переросло в твёрдую решимость – создавать
-            аудиотехнику, которая будет передавать звук безупречно точно и
-            естественно.
-          </p>
-          <blockquote>
-            Никогда не переставайте мечтать. Всегда мечтайте о лучшем, и думайте
-            о том, как этого достичь.
-            <span>Основатель компании Амар Боуз</span>
-          </blockquote>
+      <!--Качества-->
+      <section class="section-first">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Перечень Преимуществ</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="title-features">Внимание к деталям</h3>
+              <p class="features-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="title-features">Пунктуальность</h3>
+              <p class="features-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="title-features">Планирование</h3>
+              <p class="features-text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="title-features">Современные технологии</h3>
+              <p class="features-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
-      <!-- Reviews section -->
-      <section>
-        <video
-          src="https://www.youtube.com/watch?v=VqP11Ma_2Fk&ab_channel=Bose"
-          poster="./images/reviews/review.jpg"
-        ></video>
-        <h2>обзоры</h2>
-        <h3>Bose Сorporation</h3>
-        <p>
-          Critically acclaimed for their powerful noise cancelling, astonishing
-          sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones
-          700 help turn any space into the perfect place to listen to music, get
-          work done, or just shut out the world for a few moments and relax.
-        </p>
-        <ul>
-          <li>01</li>
-          <li>02</li>
-          <li>03</li>
-          <li>04</li>
-        </ul>
+      <!--Картинки-->
+      <section class="section-second">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="images-list list">
+            <li class="picture-item">
+              <img src="./images/logo2.jpg" alt="Набор текста на клавиатуре" width="370" />
+            </li>
+            <li class="picture-item">
+              <img src="./images/logo1.jpg" alt="Работа за компьютером" width="370" />
+            </li>
+            <li class="picture-item">
+              <img src="./images/logo3.jpg" alt="Работа за планшетом" width="370" />
+            </li>
+          </ul>
+        </div>
       </section>
-      <!-- Fag section -->
-      <section>
-        <h2>FAQ</h2>
-        <details>
-          <summary>
-            01 Как выполнить сопряжение с мобильным устройством?
-          </summary>
-          <p>
-            Во-первых, убедитесь, что ваши наушники включены одним нажатием
-            верхней кнопки на задней стороне правого наушника. Затем нажмите и
-            удерживайте кнопку питания в течение 3x секунд, чтобы перевести
-            наушники в режим сопряжения. Обратите внимание: если вы подключаете
-            наушники впервые, они автоматически включаются сразу в этом режиме
-            сопряжения. Голосовые подсказки предоставят вам дополнительные
-            инструкции. Мы рекомендуем вам использовать приложение Bose Music
-            для завершения процесса сопряжения, однако вы также можете
-            использовать настройки Bluetooth на своем устройстве.
-          </p>
-        </details>
-        <details>
-          <summary>02 Каков диапазон беспроводной связи у Bose NC 700?</summary>
-          <p>
-            Во-первых, убедитесь, что ваши наушники включены одним нажатием
-            верхней кнопки на задней стороне правого наушника. Затем нажмите и
-            удерживайте кнопку питания в течение 3x секунд, чтобы перевести
-            наушники в режим сопряжения. Обратите внимание: если вы подключаете
-            наушники впервые, они автоматически включаются сразу в этом режиме
-            сопряжения. Голосовые подсказки предоставят вам дополнительные
-            инструкции. Мы рекомендуем вам использовать приложение Bose Music
-            для завершения процесса сопряжения, однако вы также можете
-            использовать настройки Bluetooth на своем устройстве.
-          </p>
-        </details>
-        <details>
-          <summary>03 Как сложить наушники Bose NC 700 для хранения?</summary>
-          <p>
-            Во-первых, убедитесь, что ваши наушники включены одним нажатием
-            верхней кнопки на задней стороне правого наушника. Затем нажмите и
-            удерживайте кнопку питания в течение 3x секунд, чтобы перевести
-            наушники в режим сопряжения. Обратите внимание: если вы подключаете
-            наушники впервые, они автоматически включаются сразу в этом режиме
-            сопряжения. Голосовые подсказки предоставят вам дополнительные
-            инструкции. Мы рекомендуем вам использовать приложение Bose Music
-            для завершения процесса сопряжения, однако вы также можете
-            использовать настройки Bluetooth на своем устройстве.
-          </p>
-        </details>
-        <details>
-          <summary>04 Работает ли гарантия на международном уровне?</summary>
-          <p>
-            Во-первых, убедитесь, что ваши наушники включены одним нажатием
-            верхней кнопки на задней стороне правого наушника. Затем нажмите и
-            удерживайте кнопку питания в течение 3x секунд, чтобы перевести
-            наушники в режим сопряжения. Обратите внимание: если вы подключаете
-            наушники впервые, они автоматически включаются сразу в этом режиме
-            сопряжения. Голосовые подсказки предоставят вам дополнительные
-            инструкции. Мы рекомендуем вам использовать приложение Bose Music
-            для завершения процесса сопряжения, однако вы также можете
-            использовать настройки Bluetooth на своем устройстве.
-          </p>
-        </details>
+      <!--Состав команды-->
+      <section class="team-section">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team-list list">
+            <li class="teammate">
+              <img class="human" src="./images/photo1.jpg" alt="сотрудник1" width="270" />
+              <div class="description">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p class="team-text">Product Designer</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="teammate">
+              <img class="human" src="./images/photo2.jpg" alt="сотрудник2" width="270" />
+              <div class="description">
+                <h3 class="title">Ольга Репина</h3>
+                <p class="team-text">Frontend Developer</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="teammate">
+              <img class="human" src="./images/photo3.jpg" alt="сотрудник3" width="270" />
+              <div class="description">
+                <h3 class="title">Николай Тарасов</h3>
+                <p class="team-text">Marketing</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="teammate">
+              <img class="human" src="./images/photo4.jpg" alt="сотрудник4" width="270" />
+              <div class="description">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p class="team-text">UI Designer</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link link" href="">
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Clients section -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#logo-4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a class="clients-link" href="">
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/icons.svg#logo-5"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+    <!--Футер-->
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-item">
+          <a href="./index.html" class="logo">Web<span class="studio-footer">Studio</span></a>
+        </div>
+        <address>
+          <ul class="footer-list">
+            <li class="location-item">
+              <a
+                href="https://bit.ly/3pXMvUd"
+                target="_blank"
+                class="location"
+                rel="noopener noreferrer"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="location-item">
+              <a href="mailto:info@example.com" class="footer-contacts">info@example.com</a>
+            </li>
+            <li class="location-item">
+              <a href="tel:+380991111111" class="footer-contacts">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
